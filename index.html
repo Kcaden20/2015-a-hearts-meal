@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+ <title> A Heart's Meal</title>
+		<meta name="description" content="A Heart's Meal is a project created by Kevin Cadena for Type III where participants cook meals from home and then interview with Kevin Cadena about their home" >
+                  <meta http-equiv="author" content="A Heart's Meal with">
+                 <meta name="keyword" content="A Heart's Meal With, Food, Cooking, Jan Fairbarn, Graphic Design, Typography ">
+				  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pep/0.4.0/jquery.pep.min.js"></script>
+  <script src="https://rawgithub.com/ngryman/jquery.finger/v0.1.0-alpha/dist/jquery.finger.js"></script>
+  <link rel="stylesheet"  href="css/stylesheet.css" type="text/css">
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Pacifico' rel='stylesheet' type='text/css'>
+ </head>
+
+<body>
+<!--   <body background="img/wood.jpg"> -->
+  <div id="name">
+    <a target="_blank" href="pages/About/index.html">
+     <h1>A Heart's Meal <h1>
+	 <h2>With Kevin Cadena <br/>
+		  <small><small><small> (Click and hold to drag around plates)<br/>(Double click on here or any of the plates for info) </small></small></small>
+	 </h2>
+    </a>
+  </div>
+
+          <img class="draggable" id="item_84" data-url="pages/Indhu/index.html"  title="Double Click" src="img/Food1.png" />
+              <img class="draggable" id="item_83" data-url="pages/Luis/index.html"  title="Double Click" src="img/Food2.png" />
+              <img class="draggable" id="item_82" data-url="pages/Aki/index.html"  title="Double Click" src="img/Food3.png" />
+              <img class="draggable" id="item_76" data-url="pages/Aki/index.html"  title="Double Click" src="img/Food4.png" />
+              <img class="draggable" id="item_81" data-url="pages/Danielle/index.html"  title="Double Click" src="img/Food5.png" />
+              <img class="draggable" id="item_80" data-url="pages/Annalia/index.html"  title="Double Click" src="img/food.png" />
+              <img class="draggable" id="item_79" data-url="pages/Klaudia/index.html"  title="Double Click" src="img/food6.png" />
+              <img class="draggable" id="item_77" data-url="pages/Kevin/index.html"  title="Double Click" src="img/food7.png" />
+                    <script type="text/javascript">
+  $(function() {
+    $( ".draggable" ).pep();
+    $('[data-url]').on('doubletap', function() {
+      window.location.href = $(this).data('url');
+    });
+  });
+
+	 
+	 $(document).ready(function() {
+		var index = Math.floor(Math.random() * (2 - 0 + 1)) + 0;
+		var colors = ["wood.jpg", "wood2.jpg",  "bleaf.jpg"];
+		var y = "url(img/" + colors[index] + ")";
+
+// 		var y = "url(img/wood.jpg)";
+		document.body.style.background = y;
+	 });
+</script>
+</body>
+</html>

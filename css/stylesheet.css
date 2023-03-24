@@ -1,0 +1,117 @@
+@charset "UTF-8";
+ body {background-repeat: repeat-y;
+ }
+ img {
+      border: 0px;
+      }
+    #hello {
+      position:absolute;
+      left:45px;
+      top:20px;
+      width:108px;
+      height:56px;
+      z-index:1;
+    }
+    #name {
+      position: fixed;
+      text-align: center;
+      right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+      z-index:200000;
+      width:435px;
+    }
+    #share {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      margin-left: -40px;
+      z-index:200000;
+    }
+    .draggable {
+      cursor: pointer;
+    }
+    .pep-active {
+      /*z-index: 999999999!important;*/
+    }
+
+        #item_84 {
+      position:absolute;
+      left:2vw;
+      top:50px;
+      z-index:5;
+    }
+
+        #item_83 {
+      position:absolute;
+      left:950px;
+      top:10px;
+      z-index:-2;
+    }
+
+        #item_82 {
+      position:absolute;
+      left:500px;
+      top:300px;
+      z-index:-1;
+    }
+    
+      #item_76 {
+      position:absolute;
+      left:700px;
+      top:750px;
+      z-index:-1;
+    }
+
+        #item_81 {
+      position:absolute;
+      left:900px;
+      top:975px;
+      z-index:-2;
+    }
+
+        #item_80 {
+      position:absolute;
+      left:30px;
+      top:502px;
+      z-index:-1;
+    }
+
+        #item_79 {
+      position:absolute;
+      left:167px;
+      top:1000px;
+      z-index:0;
+    }
+
+        #item_78 {
+      position:absolute;
+      left:517px;
+      top:1332px;
+      z-index:0;
+    }
+
+        #item_77 {
+      position:absolute;
+      left:1000px;
+      top:400px;
+      z-index:-2;
+    }
+    h1 {font-family: 'Pacifico';
+	    color:white;
+	    font-weight: 400;
+	     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.67);
+	     font-size: 55px;
+	    	     
+    }
+    h2 {font-family: 'Oswald';
+	    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.67);
+	    color:white;
+	   position:relative;
+	   top:-45px;
+	   font-weight: 300;
+	   letter-spacing: .5pt;
+	   font-size: 30px;
+    }
+	a {text-decoration: none;}

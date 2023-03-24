@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+ <title> A Heart's Meal</title>
+		<meta name="description" content="A Heart's Meal is a project created by Kevin Cadena for Type III where participants cook meals from home and then interview with Kevin Cadena about their home" >
+                  <meta http-equiv="author" content="A Heart's Meal with">
+                 <meta name="keyword" content="A Heart's Meal With, Food, Cooking, Jan Fairbarn, Graphic Design, Typography ">
+				  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pep/0.4.0/jquery.pep.min.js"></script>
+  <script src="https://rawgithub.com/ngryman/jquery.finger/v0.1.0-alpha/dist/jquery.finger.js"></script>
+  <link rel="stylesheet"  href="css/stylesheet.css" type="text/css">
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Pacifico' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+ </head>
+
+<body>
+
+  <div id="name">
+  </div>
+  <div id="share">
+	<a target="_blank" href="../../index.html">
+    <!-- <img border="0" src="img/logo.png" height="80" usemap="#sharethis"> -->
+	</a>
+  </div>
+  
+
+          <div class="fdwrap"><h1 id="head">
+	          <br/>
+          </h1>
+          <img id="item_84" data-url=""  title="Double Click" src="../../img/ABT2.png" />
+          <div class="navwrap">
+	      <a href="../Indhu/index.html"><div class="plate"><img class="pl" src="../../img/Food1.png"/></div></a>
+	      <a href="../Klaudia/index.html"><div class="plate"><img class="pl" src="../../img/food6.png"/></div></a>
+          <a href="../Kevin/index.html"><div class="plate"><img class="pl" src="../../img/food7.png"/></div></a>
+		  <a href="../Danielle/index.html"><div class="plate"><img class="pl" src="../../img/Food5.png"/></div>
+          <a href="../Annalia/index.html"><div class="plate"><img class="pl" src="../../img/food.png"/></div></a>
+          <a href="../Aki/index.html"><div class="plate"><img class="pl" src="../../img/Food3.png"/></div></a>
+            <a href="../../index.html"><div class="plate"><img class="pl" src="../../img/abt.png"/></div></a>
+                  <a href="../Luis/index.html"><div class="plate"><img class="pl" src="../../img/Food2.png"/></div></a>
+             
+          </div>
+          </div>
+          
+          <div class="intwrap">
+	         <div class="imgwrap">
+		         <img id="inimg" src="img/topimg.jpg"/>
+		        </div>
+		      
+          <div class="textwrap">
+
+	     
+
+			      <h1>What is A Heart's Meal?
+			      </h1>
+          <p id="int">A Heart's Meal is a project made by <a href="http://kevincadena.com/"> Kevin Cadena</a> under the guidance of Jan Fairbarn. <br/><br/>Taking the form of a series of interviews over a home-cooked meal, the overall mission of the project is to explore the idea of home through the lens of food and the sort of different things it brings back to people about home. Please double click any of the plates to view the interviews!<br/><br/>  
+          This project was set in Pacifico, Oswald and Lora. <br/>
+          Typography III 2015 <br/>
+          </p>
+	    </div>
+          </div>
+                <script type="text/javascript">
+  $(function() {
+    $( ".draggable" ).pep();
+    $('[data-url]').on('doubletap', function() {
+      window.location.href = $(this).data('url');
+    });
+  });
+  $(".noshow").click(function(){
+    var that=$(this);
+    that.stop().fadeOut(400,function(){
+        that.parent().find(".show").stop().fadeIn(400);
+    });
+});
+$(".show").click(function(){
+    var that=$(this);
+    that.stop().fadeOut(400,function(){
+        that.parent().find(".noshow").stop().fadeIn(400);
+    });
+});
+
+		$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+$(document).ready(function(){
+    // to fade in on page load
+    $("body").css("display", "none");
+    $("body").fadeIn(400); 
+})
+
+jQuery(function($) {
+    $('a').click(function() {
+        return false;
+    }).dblclick(function() {
+        window.location = this.href;
+        return false;
+    });
+});
+</script>
+</body>
+</html>
